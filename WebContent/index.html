@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome Page</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+    </style>
+  </head>
+  <body class="text-center">
+  <br />
+  <br />
+  <br />
+  <br />
+      <div class="container">
+    	<div class="row">
+       		 <div class="col-md-12  text-right">
+       		 	<form class="example" action="/action_page.php">
+	  				<input type="text" placeholder="Search based on student's name" name="search2">
+			 		<button type="submit"><i class="fa fa-search"></i></button>
+				</form>   
+     		 </div>
+   		</div>
+	</div>
+    <h4 > Welcome to the Students Management System</h4> 
+    <div class="btn-group ">
+      <form action="view" >
+      <button type="submit">View Students</button>
+      </form>
+    </div>
+
+    <div class="btn-group">
+      <form action="add-item" >
+      <button type="submit">Add a Student</button>
+      </form>
+    </div>
+    
+    <div class="btn-group ">
+      <form action="delete">
+      <button type="submit">Delete a Student</button>
+      </form>
+    </div>
+    <div class="btn-group">
+      <form action="update" >
+      <button type="submit">Update Student's Email</button>
+      </form>
+    </div>
+  </body>
+</html>
