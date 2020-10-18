@@ -16,28 +16,28 @@
     <form action="add-item" method="POST" class="needs-validation" novalidate>
       <div class="form-group">
         <label for="itemname" class="text-white">Student Name</label>
-        <input type="text" class="form-control" placeholder="Enter a Name" id="itemname" name="studentname" required>
+        <input type="text" class="form-control btn btn-dark" placeholder="Enter a Name" id="itemname" name="studentname" required>
         <div class="valid-feedback">Valid.</div>
         <div class="invalid-feedback">Please fill out this field.</div>
       </div>
       
       <div class="form-group">
         <label for="category" class="text-white">Student Email</label>
-        <input type="email" class="form-control" placeholder="Enter an Email" id="category" name="studentemail" required>
+        <input type="email" class="form-control btn btn-dark" placeholder="Enter an Email" id="category" name="studentemail" required>
         <div class="valid-feedback">Valid.</div>
         <div class="invalid-feedback">Please fill out this field.</div>
       </div>
 
       <div class="form-group">
         <label for="quantity" class="text-white">Major?</label>
-        <input type="text" placeholder="Enter your Major!" class="form-control" id="major" name="major" required>
+        <input type="text" placeholder="Enter your Major!" class="form-control btn btn-dark" id="major" name="major" required>
         <div class="valid-feedback">Valid.</div>
         <div class="invalid-feedback">Please fill out this field.</div>
       </div>
 
       <div class="form-group">
         <label for="price" class="text-white">Class Type</label>
-        <input type="text" step="0.01" placeholder="Enter a class type? (Grad or Undergrad)" class="form-control" id="classname" name="classname" required> 
+        <input type="text" step="0.01" placeholder="Enter a class type? (Grad or Undergrad)" class="form-control btn btn-dark" id="classname" name="classname" required> 
         <div class="valid-feedback">Valid.</div>
         <div class="invalid-feedback">Please fill out this field.</div>
       </div>

@@ -11,14 +11,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-	    <h4 align="center">Update the email using the student's ID</h4>
+	    <h4 align="center">Update student's email using student's ID</h4>
     <div  align="center">
         <form  action="update" method="POST">
         <label>Student ID</label>
-        <input type="number" placeholder="Enter Student ID" name="studentid" required>
+        <input class="btn btn-dark" type="number" placeholder="Enter Student ID" name="studentid" required>
         <label>new Email</label>
-        <input type="email" placeholder="Enter new Email" name="email" required>
-        <button type="submit">Submit</button>
+        <input class="btn btn-dark" type="email" placeholder="Enter new Email" name="email" required>
+        <button class="btn btn-primary" type="submit">Submit</button>
         </form>
         <a href="./index.html">Return to the Main Page</a> 
     </div> 

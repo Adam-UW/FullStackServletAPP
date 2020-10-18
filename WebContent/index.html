@@ -24,38 +24,54 @@
   <br />
   <br />
   <br />
-      <div class="container">
+        <div class="container text-dark">
     	<div class="row">
-       		 <div class="col-md-12  text-right">
-       		 	<form class="example" action="/action_page.php">
-	  				<input type="text" placeholder="Search based on student's name" name="search2">
-			 		<button type="submit"><i class="fa fa-search"></i></button>
+       		 <div class=" col-4 col-md-8  col-xs-4 text-left">
+       		 	<form class="example" action="search">
+	  				<input  class="btn btn-dark col-md-4" type="text" placeholder="Search using student's ID" name="search2">
+			 		<button class="btn btn-dark" type="submit"><i class="fa fa-search"></i></button>
 				</form>   
      		 </div>
    		</div>
 	</div>
-    <h4 > Welcome to the Students Management System</h4> 
+  		
+		  		<i class="fa fa-spinner fa-spin"></i>
+				<i class="fa fa-circle-o-notch fa-spin"></i>
+				<i class="fa fa-refresh fa-spin"></i>
+				<i class="fa fa-cog fa-spin"></i>
+				<i class="fa fa-spinner fa-pulse"></i>
+				<br />
+  
+  
+    <h3> Welcome to the Student Management System</h3> 
     <div class="btn-group ">
       <form action="view" >
-      <button type="submit">View Students</button>
+      <button class="btn btn-dark" type="submit">View Students</button>
       </form>
     </div>
 
-    <div class="btn-group">
+    <div class="btn-group ">
       <form action="add-item" >
-      <button type="submit">Add a Student</button>
+      <button class="btn btn-dark" type="submit">Add a Student</button>
       </form>
     </div>
     
     <div class="btn-group ">
       <form action="delete">
-      <button type="submit">Delete a Student</button>
+      <button class="btn btn-dark" type="submit">Delete a Student</button>
       </form>
     </div>
     <div class="btn-group">
       <form action="update" >
-      <button type="submit">Update Student's Email</button>
+      <button class="btn btn-dark"  type="submit">Update Student's Email</button>
       </form>
     </div>
   </body>
+      <footer>
+		        <!-- Copyright -->
+  					<div class="footer-copyright text-center py-3">© 2020 Copyright:
+    				<a href="https://example.com/"> TCS BY Adam Shandi</a>
+  					</div>
+    </footer>
+    
 </html>

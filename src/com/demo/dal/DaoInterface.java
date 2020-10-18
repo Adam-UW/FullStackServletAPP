@@ -11,6 +11,6 @@ public interface DaoInterface<T>{
 	
 	T save(T obj);
 	
-	void delete(String name);
+	void delete(int id);
 
 }

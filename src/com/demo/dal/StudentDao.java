@@ -98,12 +98,12 @@ public class StudentDao implements DaoInterface<Students> {
 	}
 
 	@Override
-	public void delete(String name) {
+	public void delete(int id) {
 		Connection con=DbCon.getConnection();
 		try {
-			String sql= "Delete from " +TABLE+ " where student_name=?";
+			String sql= "Delete from " +TABLE+ " where student_id=?";
 			PreparedStatement ps= con.prepareStatement(sql);
-			ps.setString(1, name);
+			ps.setInt(1, id);
 			
 			ps.executeUpdate();
 			

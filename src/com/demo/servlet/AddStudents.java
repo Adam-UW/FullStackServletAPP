@@ -2,6 +2,7 @@ package com.demo.servlet;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -39,9 +40,14 @@ public class AddStudents extends HttpServlet {
 		student.setEmail(request.getParameter("studentemail"));
 		student.setMajor(request.getParameter("major"));
 		student.setClass_type(request.getParameter("classname"));
-		student.setGender(request.getParameter("genderm"));
-		
-
+		String [] genders= {request.getParameter("genderm"), request.getParameter("genderf"), request.getParameter("gendero")};
+		System.out.println(Arrays.toString(genders));
+		for(String s: genders) {
+			if(s != null) {
+				student.setGender(s);
+				System.out.println("inside loop " + s);
+			}
+		}
 		HttpSession session = request.getSession();
 		session.setAttribute("list",student);
 		System.out.println(student);

@@ -11,11 +11,11 @@
 </head>
 <body>
 	    <h1 align="center">Delete a Student</h1>
-    <div>
+    <div class="text-center">
         <form action="delete" method="POST">
-        <label>Student Name: </label>
-        <input type="text" placeholder="Enter a student name" name="studentname" required>
-        <button type="submit">Submit</button>
+        <label>Student ID: </label>
+        <input class="btn btn-dark" type="text" placeholder="Enter a student ID" name="studentid" required>
+        <button class="btn btn-primary" type="submit">Submit</button>
         </form>
          <a href="./index.html">Return to the Main Page</a> 
     </div>

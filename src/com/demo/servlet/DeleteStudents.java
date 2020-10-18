@@ -29,9 +29,9 @@ public class DeleteStudents extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		String name= request.getParameter("studentname");
-		System.out.println(name);
-		studentDao.delete(name);
+		int id= Integer.parseInt(request.getParameter("studentid"));
+		System.out.println(id);
+		studentDao.delete(id);
 		
 		response.sendRedirect("view");
 	}
